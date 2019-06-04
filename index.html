@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+  
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+
+  <script type="text/babel">
+    function Resume() { 
+      return (
+        <div>
+        <main>
+        <header>
+          <h1>Sally Student</h1>
+          <h2>Objective: Ambitious student looking for her first job</h2>
+        </header>
+
+        <section>
+          <h3>Education</h3>
+          <h4>San Diego State University</h4>
+          <ul>
+            <li>3.5 GPA</li>
+            <li>Member of Coding Club</li>
+          </ul>
+        </section>  
+
+        <section>
+          <h3>Work Experience</h3>
+          <h4>LTD Online - Summer Intern</h4>
+          <ul>
+            <li>5/18-8/18</li>
+            <li>Description: lorem ipsum</li>
+          </ul>
+          <h4>SDSU - Coding Tutor</h4>
+            <ul>
+              <li>1/18-5/18</li>
+              <li>Description: lorem impsum</li>
+            </ul>
+        </section>
+        </main>
+
+        <section>
+          <h3>Contact Sally</h3>
+          <address>
+          <p>Sally Student</p>
+          <img src="sallystudent.jpg" alt="Sally Student photo" /> <br/>
+          <a href="mailto:sally@student.com">sally@student.com</a><br/>
+          <a href="tel:555-555-5555">555-555-5555</a><br/>
+          </address>
+        </section>
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <Resume />,
+      document.querySelector('#application-root')
+);
+
+  </script>
+</body>
+</html>
